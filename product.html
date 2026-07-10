@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- <style>
-        .card image{
-            width: 100%;
-            height: 220px;
-            object-fit: contain;
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <style>
+        .card{
+            height: 100%; 
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 5px rgb(0,0,0,0.1);
+            transition: all 0.3s;     
         }
-    </style> -->
+         .card:hover{
+            transform: translateY(-6px);
+             box-shadow: 0 12px 24px rgb(0,0,0,0.2); 
+        }
+        
+    </style> 
 </head>
 <body>
     <h1 class="text-center text-light font-weight-bold mt-4 bg-secondary">Products</h1>
   <div class="container mt-5">
     <div class="card-deck">
-        <div class="card " >
-            <div class="card-header text-center font-weight-bold"> Wirless Headphone</div>
-            <img class="card-image" src="headphone.jpg" alt="headphone" style="width: 100%;">
+        <div class="card" >
+            <div class="card-header text-center font-weight-bold bg-secondary text-light"> Wirless Headphone</div>
+            <img class="card-image" src="headphone.jpg" alt="headphone" style="height: 220PX; object-fit: contain;">
             <div class="card-body">
                 <p>Enjoy crystal-clear sound with long battery life and comfortable design</p>
                 <div class="d-flex justify-content-between">
@@ -37,8 +45,8 @@
             
         </div>
         <div class="card " >
-            <div class="card-header text-center font-weight-bold"> Smart Watch</div>
-            <img class="card-image" src="https://m.media-amazon.com/images/I/81A5vUuvYZL.jpg" alt="headphone" style="width: 100%;">
+            <div class="card-header text-center font-weight-bold bg-secondary text-light"> Smart Watch</div>
+            <img class="card-image" src="https://m.media-amazon.com/images/I/81A5vUuvYZL.jpg" alt="headphone" style="height: 220PX; object-fit: contain;">
             <div class="card-body">
                 <p>Track your health,fitness,and notifications all in one stylish smartwatch</p>
                 <div class="d-flex justify-content-between">
@@ -56,14 +64,14 @@
             
         </div>
         <div class="card " >
-            <div class="card-header text-center font-weight-bold">Gaming Laptop</div>
-            <img class="card-image" src="https://www.asus.com/media/Odin/Websites/global/ProductLine/20200824120814.jpg" alt="headphone" style="width: 100%;">
+            <div class="card-header text-center font-weight-bold bg-secondary text-light">Gaming Laptop</div>
+            <img class="card-image" src="https://www.asus.com/media/Odin/Websites/global/ProductLine/20200824120814.jpg" alt="headphone" style="height: 220PX; object-fit: contain;">
             <div class="card-body">
                 <p>High-perfomance laptop with powerful graphics for gaming and productivity</p>
                 <div class="d-flex justify-content-between">
-                <a  href="#" class="btn btn-secondary ">Read more</a>
+                <a  href="#" class="btn btn-primary">Read more</a>
                 <div class ="dropdown">
-<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">More Options</button>
+<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">More Options</button>
 <div class="dropdown-menu">
 <a class="dropdown-item" href="#">Add to Whishlist</a>
 <a class="dropdown-item" href="#">Compare</a>
@@ -86,11 +94,11 @@
 
 
     <h2 class="font-weight-bold text-center bg-secondary text-light mt-4">Products FAQs</h2>
-    <div class="container bg-light mt-4 mb-5">
+    <div class="container bg-light my-5">
         <div id="accordian">
             <div class="card">
-                <div class="header">
-                    <a class="card-link" data-toggle="collapse" href="#collapseone">Do these products have a warrenty?</a>
+                <div class="card-header  text-white">
+                    <a class="card-link d-flex justify-content-between " data-toggle="collapse" href="#collapseone">Do these products have a warrenty? <i class="bi bi-chevron-down"></i></a>
                 </div>
                 <div id="collapseone" class="collapse" data-parent="#accordian">
                     <div class=" card-body">Yes,every product come with a one year warrenty</div>
@@ -98,7 +106,7 @@
             </div>
               <div class="card">
                 <div class="header">
-                    <a class="card-link" data-toggle="collapse" href="#collapsetwo"> Can i return a product</a>
+                    <a class="card-link d-flex justify-content-between" data-toggle="collapse" href="#collapsetwo"> Can i return a product?  <i class="bi bi-chevron-down"></i></a>
                 </div>
                 <div id="collapsetwo" class="collapse" data-parent="#accordian">
                     <div class="card-body">Yes,you can return the product within 30 days of delivery,provided it is in its orginal condition with all accessories</div>
@@ -106,7 +114,7 @@
               </div>
               <div class="card">
                 <div class="header">
-                    <a class="card-link" data-toggle="collapse" href="#collapsethree"> Is free shipping available</a>
+                    <a class="card-link d-flex justify-content-between" data-toggle="collapse" href="#collapsethree"> Is free shipping available?  <i class="bi bi-chevron-down"></i></a>
                 </div>
                 <div id="collapsethree" class="collapse" data-parent="#accordian">
                     <div class="card-body">Yes,we offer free shipping on orders above $999. Delivery time may vary depending on your location</div>
